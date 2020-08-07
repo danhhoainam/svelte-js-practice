@@ -98,7 +98,7 @@
     <p>{passwordValidation.length && passwordValidation[0]}</p>
     <button on:click={addPassword}>Add Password</button>
     <ul>
-      {#each passwords as pw, i}
+      {#each passwords as pw, i (pw)}
         <li on:click={() => deletePassword(i)}>{pw}</li>
       {/each}
     </ul>
