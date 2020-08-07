@@ -1,0 +1,7 @@
+{
+    "type": "node",
+    "request": "launch",
+    "name": "App",
+    "program": "${workspaceRoot}/index.js",
+    "runtimeExecutable": "${env:HOME}/.asdf/installs/nodejs/12.18.2/bin/node"
+  }
