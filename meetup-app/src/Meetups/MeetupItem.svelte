@@ -1,4 +1,5 @@
 <script>
+  import { scale } from "svelte/transition";
   import meetups from "./meetups-store";
   import { createEventDispatcher } from "svelte";
   import Button from "./../UI/Button.svelte";
@@ -78,7 +79,7 @@
   }
 </style>
 
-<article>
+<article transition:scale>
   <header>
     <h1>
       {title}
